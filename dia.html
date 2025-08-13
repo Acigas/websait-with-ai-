@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steelhard - Gudang Senjata Legendaris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bukan.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <h1 class="store-name">⚔️ STEELHARD ⚔️</h1>
+    </header>
+
+    
+    <section class="product-intro">
+        <h2>Gudang Senjata Legendaris Steelhard</h2>
+        <p>Setiap senjata memiliki sejarah dan kekuatan tersendiri. Pilihlah dengan bijak, pejuang!</p>
+    </section>
+
+   
+    <div class="store-products">
+        <div class="product">
+            <img src="katana.jpg" alt="Katana Mistis">
+            <h3>🌊 Katana Elemental</h3>
+            <button onclick="showDetails('Katana Elemental', 'Katana dengan aura sihir air yang ditempah oleh ikan legendaris dari kedalaman samudra terdalam. Bilahnya berkilau dengan kekuatan elemental yang mampu memotong melalui dimensi.', '30 GOLD', 'katana')">
+                Lihat Detail
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="palu.jpg" alt="Palu Api">
+            <h3>🔥 Palu Sang Pemusnah</h3>
+            <button onclick="showDetails('Palu Sang Pemusnah', 'Palu yang membawa atribut api dari suku negeri tua. Setiap pukulannya menghasilkan ledakan magma yang mampu menghancurkan benteng terkuat sekalipun.', '28 GOLD', 'palu')">
+                Lihat Detail
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="perisai.jpg" alt="Perisai Kuno">
+            <h3>🛡️ Perisai Penjaga</h3>
+            <button onclick="showDetails('Perisai Penjaga', 'Perisai tua yang pernah dipakai oleh suku alur dalam peperangan melawan pasukan kegelapan. Mampu memantulkan serangan sihir tergelap.', '16 GOLD', 'perisai')">
+                Lihat Detail
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="dontos.jpg" alt="Pedang Legendaris">
+            <h3>💎 Pedang Cahaya Dontos</h3>
+            <button onclick="showDetails('Pedang Cahaya Dontos', 'Pedang berlian yang konon pernah mengalahkan satu armada pasukan dalam perang besar. Cahayanya dapat menerangi kegelapan terpekat dan memurnikan jiwa yang tercemar.', '70 GOLD', 'dontos')">
+                Lihat Detail
+            </button>
+        </div>
+
+        <div class="product coming-soon">
+            <h3>🏹 Panah Angin</h3>
+            <p>Segera Diumumkan</p>
+        </div>
+
+        <div class="product coming-soon">
+            <h3>🐉 Baju Naga</h3>
+            <p>Segera Hadir</p>
+        </div>
+
+        <div class="product coming-soon">
+            <h3>👑 Senjata Kerajaan</h3>
+            <p>Segera Diperkenalkan</p>
+        </div>
+
+        <div class="product coming-soon">
+            <h3>⛏️ Skop Misterius</h3>
+            <p>Segera Tersedia</p>
+        </div>
+
+        <div class="product coming-soon">
+            <h3>🪄 Tongkat Sihir</h3>
+            <p>Rahasia Tunggu Rilis</p>
+        </div>
+
+        <div class="product coming-soon">
+            <h3>📚 Buku Sihir</h3>
+            <p>Akan Datang</p>
+        </div>
+    </div>
+
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="medieval-popup">
+            <div class="popup-header">
+                <h3 id="popupTitle">Detail Senjata</h3>
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+            </div>
+            <div class="popup-body">
+                <p id="popupDescription">Deskripsi senjata akan muncul di sini.</p>
+                <p class="price">Harga: <span id="popupPrice">0 GOLD</span></p>
+                <a href="#" class="buy-now-btn" id="buyNowBtn" onclick="goToPurchase()">
+                    <i class="fas fa-coins"></i> Beli Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="aku.js"></script>
+</body>
+</html>

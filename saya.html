@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steelhard - Pembelian Senjata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bukan.css">
+</head>
+<body>
+  
+    <header class="navbar">
+        <h1 class="store-name">⚔️ STEELHARD - Pembelian ⚔️</h1>
+    </header>
+
+   
+    <div class="purchase-form">
+        <a href="dia.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Kembali ke Toko
+        </a>
+        
+        <form id="purchaseForm">
+            <div class="form-group">
+                <label for="paymentMethod">
+                    <i class="fas fa-coins"></i> Metode Pembayaran:
+                </label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="">--Pilih Metode Pembayaran--</option>
+                    <option value="Koin">💰 Koin Emas</option>
+                    <option value="Guild Transfer">🏛️ Guild Transfer</option>
+                    <option value="Barter">🔄 Barter Barang</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="selectedItem">
+                    <i class="fas fa-sword"></i> Senjata yang Dipilih:
+                </label>
+                <input type="text" id="selectedItem" name="selectedItem" readonly required>
+            </div>
+
+            <div class="form-group">
+                <label for="weaponPrice">
+                    <i class="fas fa-coins"></i> Harga:
+                </label>
+                <input type="text" id="weaponPrice" name="weaponPrice" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="location">
+                    <i class="fas fa-map-marker-alt"></i> Ibukota Anda:
+                </label>
+                <input type="text" id="location" name="location" placeholder="Masukkan lokasi pengiriman" required>
+            </div>
+
+            <div class="form-group">
+                <label for="playerName">
+                    <i class="fas fa-user"></i> Nama Pejuang:
+                </label>
+                <input type="text" id="playerName" name="playerName" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="playerClass">
+                    <i class="fas fa-shield-alt"></i> Kelas Pejuang:
+                </label>
+                <select id="playerClass" name="playerClass" required>
+                    <option value="">--Pilih Kelas Anda--</option>
+                    <option value="Warrior">⚔️ Warrior</option>
+                    <option value="Mage">🔮 Mage</option>
+                    <option value="Archer">🏹 Archer</option>
+                    <option value="Paladin">🛡️ Paladin</option>
+                    <option value="Assassin">🗡️ Assassin</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">
+                    <i class="fas fa-scroll"></i> Catatan Khusus:
+                </label>
+                <textarea id="notes" name="notes" placeholder="Permintaan khusus atau pesan untuk pandai besi..." rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="buyButton">
+                <i class="fas fa-shopping-cart"></i> Konfirmasi Pembelian
+            </button>
+        </form>
+    </div>
+
+   
+    <div id="confirmModal" class="popup-overlay" style="display: none;">
+        <div class="medieval-popup">
+            <div class="popup-header">
+                <h3>🎉 Pembelian Berhasil! 🎉</h3>
+            </div>
+            <div class="popup-body">
+                <div id="confirmationDetails"></div>
+                <a href="dia.html" class="buy-now-btn">
+                    <i class="fas fa-store"></i> Kembali ke Toko
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="aku.js"></script>
+</body>
+</html>
